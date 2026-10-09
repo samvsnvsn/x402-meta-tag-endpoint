@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fixture — full og:video + twitter:player tag set</title>
+  <!-- Unrelated tags that must NOT leak into the extraction result -->
+  <meta property="og:title" content="Fixture Video Page">
+  <meta property="og:site_name" content="Fixture Site">
+  <meta name="twitter:card" content="player">
+  <meta name="twitter:title" content="Fixture Video Page">
+  <meta name="description" content="Full OpenGraph video + twitter:player tag set for extraction tests.">
+  <!-- OpenGraph video tags: complete set -->
+  <meta property="og:video" content="https://cdn.example.com/videos/fixture.mp4">
+  <meta property="og:video:url" content="https://cdn.example.com/videos/fixture.mp4">
+  <meta property="og:video:secure_url" content="https://cdn.example.com/videos/fixture.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1280">
+  <meta property="og:video:height" content="720">
+  <!-- twitter:player tags: complete set -->
+  <meta name="twitter:player" content="https://cdn.example.com/embed/fixture">
+  <meta name="twitter:player:stream" content="https://cdn.example.com/videos/fixture.m3u8">
+  <meta name="twitter:player:width" content="480">
+  <meta name="twitter:player:height" content="270">
+</head>
+<body>
+  <h1>Fixture Video Page</h1>
+  <p>Body markup only — extraction reads head meta tags.</p>
+</body>
+</html>

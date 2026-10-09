@@ -1,0 +1,23 @@
+{
+  "name": "x402-meta-tag-endpoint",
+  "version": "1.0.0",
+  "description": "x402-gated HTTP endpoint that extracts OpenGraph video and twitter:player meta tags from any web page. $0.01 per call in USDC on Base.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/x402.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "x402",
+    "opengraph",
+    "meta-tags",
+    "twitter-player",
+    "usdc",
+    "base"
+  ],
+  "license": "MIT"
+}

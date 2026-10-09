@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+  <meta charset="utf-8">
+  <title>Malformed Fixture — parser must tolerate broken markup</title>
+  <!-- Intact tags below must still be recovered from the broken document -->
+  <meta property="og:video" content="https://cdn.example.com/v/broken.mp4?a=1&amp;b=2">
+  <meta property="og:video:secure_url" content='https://cdn.example.com/v/secure.mp4'>
+  <META PROPERTY="OG:VIDEO:WIDTH" CONTENT="640">
+  <meta property=og:video:height content=360>
+  <meta property="og:video:width" content="999">
+  <div data-property="og:video" content="https://evil.example/should-not-match"></div>
+  <<< >>> &broken; stray ampersand: & unclosed entity: &amp
+  <meta name='twitter:player' content='https://cdn.example.com/embed/broken'>
+  <meta name="twitter:player:stream" content="https://cdn.example.com/hls/x.m3u8?token=ab&amp;cd">
+  <meta name="twitter:player:height" content="270">
+</body>
+<meta property="og:video:type" content="video/mp
